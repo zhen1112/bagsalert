@@ -1,6 +1,6 @@
 const { Keypair } = require('@solana/web3.js');
-const { insertWallet } = require('./connection'); // Pastikan path sesuai
-const bs58 = require('bs58'); // pastikan sudah di-import
+const { insertWallet } = require('./connection');
+const bs58 = require('bs58'); 
 
 async function createSolanaWallet(userId) {
     const keypair = Keypair.generate();
